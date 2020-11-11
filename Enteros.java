@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Enteros {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Primero número: ");
+        System.out.print("Primer número: ");
         int num1 = scan.nextInt();
         System.out.print("Segundo número: ");
         int num2 = scan.nextInt();
