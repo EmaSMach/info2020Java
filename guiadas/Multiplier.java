@@ -15,6 +15,7 @@ public class Multiplier {
         Scanner scan = new Scanner(System.in);
         System.out.print("Número: ");
         int number = scan.nextInt();
+        scan.close();
         for (int i=1; i <= 10; i++) {
             System.out.println(number + " * " + i + " = " + number*i);
         }
