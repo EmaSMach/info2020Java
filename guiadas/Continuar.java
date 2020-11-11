@@ -24,5 +24,6 @@ public class Continuar {
             System.out.print("Desea continuar? Ingrese 1 para 'sí' o 2 para 'no': ");
             continuar = scan.nextInt();
         }
+        scan.close();
     }
 }
