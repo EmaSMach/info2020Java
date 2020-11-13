@@ -3,16 +3,16 @@ import java.util.Scanner;
 public class Enteros {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Primer número: ");
+        System.out.print("Primer nï¿½mero: ");
         int num1 = scan.nextInt();
-        System.out.print("Segundo número: ");
+        System.out.print("Segundo nï¿½mero: ");
         int num2 = scan.nextInt();
-        System.out.print("Tercer número: ");
+        System.out.print("Tercer nï¿½mero: ");
         int num3 = scan.nextInt();
 
-        System.out.println("El primer número ingresado es: " + num1);
-        System.out.println("El segundo número ingresado es: " + num2);
-        System.out.println("El tercer número ingresado es: " + num3);
+        System.out.println("El primer nÃºmero ingresado es: " + num1);
+        System.out.println("El segundo nÃºmero ingresado es: " + num2);
+        System.out.println("El tercer nÃºmero ingresado es: " + num3);
         scan.close();
     }
 }
