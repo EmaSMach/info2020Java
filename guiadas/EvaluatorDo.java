@@ -11,10 +11,10 @@
 import java.util.Scanner;
 
 
-public class Evaluator {
+public class EvaluatorDo {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int continuar = 1;
+        int continuar = 0;
         do {
             System.out.print("Nota: ");
             int nota = scan.nextInt();
@@ -35,8 +35,10 @@ public class Evaluator {
             } else {
                 System.out.print("Nota fuera de rango");
             }
+            System.out.println();
             System.out.println("Desea realizar la acción otra vez?");
             System.out.print("Ingrese 1 para continuar, u otro número en caso contrario: ");
+            continuar = scan.nextInt();
         } while (continuar == 1);
         scan.close();
     }
