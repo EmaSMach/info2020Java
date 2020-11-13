@@ -15,29 +15,25 @@ public class Evaluator {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int continuar = 1;
-        do {
-            System.out.print("Nota: ");
-            int nota = scan.nextInt();
-            System.out.println("Nota ingresada: " + nota);
-            // check if the note is between 0 and 100
-            if (nota >= 0 && nota <= 100) {
-                if (nota >= 93) {
-                System.out.print("Excelente!");
-                } else if (nota > 85) {
-                    System.out.print("Sobresaliente");
-                } else if (nota > 74) {
-                    System.out.print("Distinguido");
-                } else if (nota > 59) {
-                    System.out.print("Aprobado");
-                } else if (nota <= 58 && nota >= 0){
-                    System.out.print("Desaprobado");
-                }
-            } else {
-                System.out.print("Nota fuera de rango");
+        System.out.print("Nota: ");
+        int nota = scan.nextInt();
+        System.out.println("Nota ingresada: " + nota);
+        // check if the note is between 0 and 100
+        if (nota >= 0 && nota <= 100) {
+            if (nota >= 93) {
+            System.out.print("Excelente!");
+            } else if (nota > 85) {
+                System.out.print("Sobresaliente");
+            } else if (nota > 74) {
+                System.out.print("Distinguido");
+            } else if (nota > 59) {
+                System.out.print("Aprobado");
+            } else if (nota <= 58 && nota >= 0){
+                System.out.print("Desaprobado");
             }
-            System.out.println("Desea realizar la acción otra vez?");
-            System.out.print("Ingrese 1 para continuar, u otro número en caso contrario: ");
-        } while (continuar == 1);
+        } else {
+            System.out.print("Nota fuera de rango");
+        }
         scan.close();
     }
 }
