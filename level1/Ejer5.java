@@ -5,7 +5,7 @@ public class Ejer5 {
     public static void main(String[] args){
         int n1 = pedirNumero("Primer Número: ");
         int n2 = pedirNumero("Segundo Número: ");
-        System.out.println("Resultado: " + multiplicarSumando(n1, n2));
+        System.out.println(n1 + " x " + n2 + " = " + multiplicarSumando(n1, n2));
     }
     
     public static int pedirNumero(String mensaje){
