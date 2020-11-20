@@ -8,4 +8,11 @@ public class Utiles {
         int num = scan.nextInt();
         return num;
     }
+    
+    public static String pedirTexto(String mensaje){
+        System.out.print(mensaje);
+        Scanner scan = new Scanner(System.in);
+        String texto = scan.next();
+        return texto;
+    }
 }
